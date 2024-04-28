@@ -6,7 +6,7 @@ import Alert from './Alert';
 const Registro = () => {
   return (
 
-    <div className="container mt-5">
+    <div className="container">
       <h1 className="text-center">Crea una cuenta</h1>
       <div className="social-buttons-container">
         <SocialButton icon="fab fa-facebook" />
