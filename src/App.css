@@ -1,5 +1,3 @@
-/* styles.css */
-
 .form-group{
   margin-top: 5px;
   display: flex;
@@ -8,16 +6,21 @@
   align-items: center;
 }
 
-/* Estilos para el contenedor del formulario */
 .container {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid #ced4da; 
+  padding: 20px;
+  border-radius: 8px; 
+  margin: 120px auto; 
+  max-width: 300px; 
+  
 }
 
-/* Estilos para la tarjeta de registro */
+
 .card {
   margin-top: 20px;
 }
@@ -49,14 +52,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px; /* Ajusta el ancho del botón según sea necesario */
-  height: 50px; /* Ajusta la altura del botón según sea necesario */
-  background-color: #007bff; /* Cambia el color de fondo del botón según sea necesario */
-  border-radius: 50%; /* Hace que el botón sea redondo */
-  margin: 0 10px; /* Ajusta el margen entre los botones según sea necesario */
+  width: 50px;
+  height: 50px; 
+  border-radius: 50%; 
+  margin: 0 10px; 
+  background-color: transparent; 
+  border: 1px solid black; 
 }
 
+
 .social-button i {
-  color: white; /* Cambia el color del icono según sea necesario */
-  font-size: 24px; /* Ajusta el tamaño del icono según sea necesario */
+  color: black;
+  font-size: 24px; 
 }

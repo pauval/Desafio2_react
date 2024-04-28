@@ -66,7 +66,7 @@ const Formulario = () => {
       <div className="form-group">
         <input type="password" className="form-control" placeholder='Confirmar Contraseña' value={confirmarContraseña} onChange={handleConfirmarContraseñaChange} />
       </div>
-      <button type="submit" className="btn btn-primary">Registrarse</button>
+      <button type="submit" className="btn btn-success">Registrarse</button>
     </form>
   );
 }
