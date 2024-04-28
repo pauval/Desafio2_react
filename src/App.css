@@ -1,5 +1,13 @@
 /* styles.css */
 
+.form-group{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Estilos para el contenedor del formulario */
 .container {
   margin-top: 50px;

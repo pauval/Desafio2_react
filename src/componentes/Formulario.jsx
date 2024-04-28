@@ -55,20 +55,16 @@ const Formulario = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div className="form-group">
-        <label>Nombre:</label>
-        <input type="text" className="form-control" value={nombre} onChange={handleNombreChange} />
+        <input type="text" className="form-control" placeholder='Nombre' value={nombre} onChange={handleNombreChange} />
       </div>
       <div className="form-group">
-        <label>Email:</label>
-        <input type="email" className="form-control" value={email} onChange={handleEmailChange} />
+        <input type="email" className="form-control" placeholder='Email' value={email} onChange={handleEmailChange} />
       </div>
       <div className="form-group">
-        <label>Contraseña:</label>
-        <input type="password" className="form-control" value={contraseña} onChange={handleContraseñaChange} />
+        <input type="password" className="form-control" placeholder='Contraseña' value={contraseña} onChange={handleContraseñaChange} />
       </div>
       <div className="form-group">
-        <label>Confirmar Contraseña:</label>
-        <input type="password" className="form-control" value={confirmarContraseña} onChange={handleConfirmarContraseñaChange} />
+        <input type="password" className="form-control" placeholder='Confirmar Contraseña' value={confirmarContraseña} onChange={handleConfirmarContraseñaChange} />
       </div>
       <button type="submit" className="btn btn-primary">Registrarse</button>
     </form>
