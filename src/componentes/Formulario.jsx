@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 
 const Formulario = () => {
   const [nombre, setNombre] = useState('');
@@ -66,9 +67,10 @@ const Formulario = () => {
       <div className="form-group">
         <input type="password" className="form-control" placeholder='Confirmar Contraseña' value={confirmarContraseña} onChange={handleConfirmarContraseñaChange} />
       </div>
-      <button type="submit" className="btn btn-primary">Registrarse</button>
+      <Button type="submit" className="btn" variant="success" style={{ backgroundColor: 'green', width: '100%' }}>Registrarse</Button>
     </form>
   );
 }
 
 export default Formulario;
+
