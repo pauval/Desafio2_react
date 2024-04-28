@@ -26,3 +26,25 @@
 }
 
 /* Agrega más estilos según sea necesario */
+
+.social-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Ajusta el ancho del botón según sea necesario */
+  height: 50px; /* Ajusta la altura del botón según sea necesario */
+  background-color: #007bff; /* Cambia el color de fondo del botón según sea necesario */
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  margin: 0 10px; /* Ajusta el margen entre los botones según sea necesario */
+}
+
+.social-button i {
+  color: white; /* Cambia el color del icono según sea necesario */
+  font-size: 24px; /* Ajusta el tamaño del icono según sea necesario */
+}

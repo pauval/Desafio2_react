@@ -2,9 +2,9 @@ import React from 'react';
 
 const SocialButton = ({ icon }) => {
   return (
-    <button className="btn btn-primary mr-2">
+    <div className="social-button">
       <i className={icon}></i>
-    </button>
+    </div>
   );
 }
 
