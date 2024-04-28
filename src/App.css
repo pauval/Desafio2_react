@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -17,6 +18,7 @@
   border-radius: 8px; 
   margin: 120px auto; 
   max-width: 300px; 
+  background-color: white;
   
 }
 
@@ -25,22 +27,15 @@
   margin-top: 20px;
 }
 
-/* Estilos para los botones de redes sociales */
 .btn-social {
   margin-bottom: 10px;
 }
 
-/* Estilos para los campos de formulario */
-.form-group {
-  margin-bottom: 20px;
-}
 
-/* Estilos para la alerta */
 .alert {
   margin-top: 20px;
 }
 
-/* Agrega más estilos según sea necesario */
 
 .social-buttons-container {
   display: flex;
@@ -64,4 +59,22 @@
 .social-button i {
   color: black;
   font-size: 24px; 
+}
+
+
+.alert-success {
+  background-color: #d4edda; 
+  color: #155724; 
+  border: 1px solid #c3e6cb;
+  padding: 10px 15px; 
+  margin-bottom: 20px;
+}
+
+
+.alert-danger {
+  background-color: #f8d7da; 
+  color: #721c24;   
+  border: 1px solid #f5c6cb; 
+  padding: 10px 15px; 
+  margin-bottom: 20px; 
 }

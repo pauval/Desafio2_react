@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 
-const Formulario = () => {
+const Formulario = ({ mostrarAlerta }) => {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [contraseña, setContraseña] = useState('');
@@ -26,31 +26,23 @@ const Formulario = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Validar que el email tenga formato válido
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      // Mostrar mensaje de error si el formato del email es incorrecto
-      alert('Por favor ingresa un correo electrónico válido.');
+      mostrarAlerta('Por favor ingresa un correo electrónico válido.', 'alert-danger');
       return;
     }
 
-    // Validar que todos los campos estén completos
     if (!nombre || !email || !contraseña || !confirmarContraseña) {
-      // Mostrar mensaje de error si algún campo está vacío
-      alert('Por favor completa todos los campos.');
+      mostrarAlerta('Por favor completa todos los campos.', 'alert-danger');
       return;
     }
 
-    // Validar que las contraseñas coincidan
     if (contraseña !== confirmarContraseña) {
-      // Mostrar mensaje de error si las contraseñas no coinciden
-      alert('Las contraseñas no coinciden.');
+      mostrarAlerta('Las contraseñas no coinciden.', 'alert-danger');
       return;
     }
 
-    // Si pasa todas las validaciones, puedes enviar los datos a través de una función prop que recibe Formulario.jsx
-    // Por ejemplo, puedes llamar a una función llamada 'handleRegistro' que esté definida en Registro.jsx
-    // handleRegistro({ nombre, email, contraseña });
+    mostrarAlerta('Registro exitoso', 'alert-success');
   };
 
   return (
@@ -73,4 +65,3 @@ const Formulario = () => {
 }
 
 export default Formulario;
-
